@@ -1,4 +1,4 @@
-package tm
+package definition
 
 type TransitionFunction struct {
 	currentState     string

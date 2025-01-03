@@ -3,12 +3,13 @@ package tm
 import (
 	"fmt"
 	"go-tm/io"
+	"go-tm/tm/definition"
 	"os"
 )
 
 func RunTM(definitionString string, inputString string) {
 
-	def, error := ParseDefinition(definitionString)
+	def, error := definition.ParseDefinition(definitionString)
 
 	if error != nil {
 		def.Print()
